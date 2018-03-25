@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
-import calcultorReducer  from './calcultorReducer';
+import {combineReducers} from 'redux';
+import {routerReducer} from 'react-router-redux';
+import chessGameReducer from '../chessGameReducer';
 
 const rootReducer = combineReducers({
-  routing: routerReducer,
-  calculator: calcultorReducer
+    routing: routerReducer,
+    chessGame: chessGameReducer
 });
 
 export default rootReducer;
